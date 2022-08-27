@@ -2,14 +2,13 @@ import os
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chromium.options import ChromiumOptions
-from selenium.webdriver.opera.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.opera import OperaDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 import logging.config
-from opencart_ui_tests.logging_settings import logger_config
+from logging_settings import logger_config
 
 logging.config.dictConfig(logger_config)
 LOGGER_START = logging.getLogger("file_logger_start")
